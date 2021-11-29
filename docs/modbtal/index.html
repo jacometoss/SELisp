@@ -12,14 +12,14 @@
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atelier-forest-light.min.css">
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
         <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scilab.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/lisp.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/scilab.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/lisp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -177,7 +177,7 @@
 <p><img alt="MODBTCU" src="https://i.ibb.co/Z1VFXVB/vd02.jpg" /></p>
 <h2 id="informacion-general">Información General</h2>
 <p>En esta sección es necesario ingresar un nombre al circuito y que tipo de sistema de alimentación de la carga instalada.</p>
-<pre><code class="text">N.Circuto: (En esta opción se ingresa el nombre del circuito)
+<pre><code class="language-text">N.Circuto: (En esta opción se ingresa el nombre del circuito)
 
 Sistema: (Debe seleccionar una opción)
     -LN   [1 Fase  - 2 Hilos]
@@ -187,10 +187,9 @@ Sistema: (Debe seleccionar una opción)
     -LL   [2 Fases - 2 Hilos]
 SD:(La casilla sostiene el diálogo para cálculos posteriores)
 </code></pre>
-
 <h2 id="datos-de-carga">Datos de carga</h2>
 <p>Puede seleccionar la unidad de carga como el factor de potencia y de demanda, estos últimos no tienen unidades y son expresados por unidad..</p>
-<pre><code class="text">Carga : (En esta opción se ingresa la carga del circuito)
+<pre><code class="language-text">Carga : (En esta opción se ingresa la carga del circuito)
 Unidad: (Debe seleccionar una opción)
     -W   [Watts]
     -VA  [Voltioamperio] 
@@ -201,10 +200,9 @@ Factor de potencia : No tiene unidades y su valor oscila entre 0.65-0.95
 Factor de demanda : Se expresa por unidad y depende del tipo de carga.  
     -Fd  [0-1]
 </code></pre>
-
 <h2 id="alimentacion-y-tuberias">Alimentación y tuberías</h2>
 <p>Las unidades de carga se puede seleccionar adecuadamente como el factor de potencia y de demanda, estos últimos no tienen unidades y son expresados por unidad.</p>
-<pre><code class="text">Carga : (En esta opción se ingresa la carga del circuito)
+<pre><code class="language-text">Carga : (En esta opción se ingresa la carga del circuito)
 Unidad: (Debe seleccionar una opción)
     -W   [Watts]
     -VA  [Voltioamperio] 
@@ -215,48 +213,41 @@ Factor de potencia : No tiene unidades y su valor oscila entre 0.65-0.95
 Factor de demanda : Se expresa por unidad y depende del tipo de carga.  
     -Fd  [0-1]
 </code></pre>
-
 <h2 id="tension">Tensión</h2>
 <p>La unidad de tensión predeterminada son los volts, ingrese el adecuado.</p>
-<pre><code class="text">Unidad: (Ingrese el tensión)
+<pre><code class="language-text">Unidad: (Ingrese el tensión)
     -V   [Volts]
 </code></pre>
-
 <h2 id="perdida-de-tension">Pérdida de tensión</h2>
 <p>Seleccione la  pérdida de tensión en porcentaje adecuada para la carga.</p>
-<pre><code class="text">Unidad: (Seleccione una opción)
+<pre><code class="language-text">Unidad: (Seleccione una opción)
     -CT   [5%, 4%, 3%, 2%, 1%]
 </code></pre>
-
 <h2 id="calibre">Calibre</h2>
 <p>Ingrese el conductor deseado o adecuado para su cálculo como su aislamiento y número de conductores por fase. Para efectuar el dimensionamiento del conductor seleccionado debe dejar la opción de autoajuste en &ldquo;No&rdquo;.</p>
-<pre><code class="text">Calibre: (Seleccione el calibre deseado)
+<pre><code class="language-text">Calibre: (Seleccione el calibre deseado)
     -opciones [6 AWG / 4 AWG / 2AWG / 1/0 AWG / 2/0 AWG 
                3/0 AWG / 4/0 AWG / 250 KCM / 300 KCM / 350 KCM / 400 KCM / 500 KCM / 600 KCM 
                700 KCM / 750 KCM]
 </code></pre>
-
 <h2 id="aislamiento">Aislamiento</h2>
 <p>Seleccione el aislamiento adecuado  para suministrar la energía a la carga. </p>
-<pre><code class="text">Calibre: (Seleccione una opción)
+<pre><code class="language-text">Calibre: (Seleccione una opción)
     -opciones [ RHH / RHW-2 / XHHW / XHHW-2]
 </code></pre>
-
 <h2 id="temperatura-de-operacion">Temperatura de operación</h2>
 <p>La temperatura de operación es importante para la situación adecuada.</p>
-<pre><code class="text">Calibre: (Seleccione una opción)
+<pre><code class="language-text">Calibre: (Seleccione una opción)
     -opciones [60°C, 75°C, 90°C]
 </code></pre>
-
 <h2 id="numero-de-conductores-por-fase">Número de conductores por fase</h2>
 <p>Cuando no sea posible satisfacer las necesidades de corriente y pérdida de tensión es posible incrementar el número de conductores por fase. Por defecto se encuentra  1 en la casilla, el autoajuste no incluye el aumento de conductores por fase.</p>
-<pre><code class="text">Nc: (Ingrese los conductors por fase)
+<pre><code class="language-text">Nc: (Ingrese los conductors por fase)
     - 1, 2, 3, 4 ... n
 </code></pre>
-
 <h2 id="condiciones-de-carga">Condiciones de carga</h2>
 <p>La distancia, eficiencia del circuito, número de conductores activos y factor de sobre carga son manejados como condiciones de carga. Por defecto se encuentran llenas algunas casillas, pero tiene la opción de ingresar otros valores adecuados a su cálculo.</p>
-<pre><code class="text">Dist. : La distancia de la carga debe ingresarse en metros.
+<pre><code class="language-text">Dist. : La distancia de la carga debe ingresarse en metros.
 Nca   : El número de conductores activos depende de la distribución de las canalizaciones.
         - 1 a 3, 4 a 6 etc.
 Fsc   : El factor de sobrecarga depende la norma utilizada por defecto tiene precargado 1.25
@@ -264,17 +255,15 @@ Fsc   : El factor de sobrecarga depende la norma utilizada por defecto tiene pre
 Eff   : La eficiencia del circuito depende de las caracteristicas de conductores y carga. 
         Por defecto se tiene expresado por unidad donde 1 equivale al 100%.
 </code></pre>
-
 <h2 id="proteccion-y-conductor">Protección y conductor</h2>
 <p>El nivel de corto circuito máximo debe plantearse para la instalación, algunos conductores deben pasar esta prueba. Generalmente colocaremos la primera opción.</p>
 <p>El autoajuste del conductor desprecia el calibre seleccionado, por lo tanto debe plantear si ajustará el conductor.  El ajuste por el momento no puede alterar número de conductores por fase para un optimo ajuste pero en versiones futuras se incorporará.</p>
-<pre><code class="text">Icc.          : Nivel de corto circuito de la instalación.
+<pre><code class="language-text">Icc.          : Nivel de corto circuito de la instalación.
                 -Icc [10 kA, 14 kA, 18 kA, 25 kA]
 Autoajustar   : Ajuste para la selección adecuada del conductor.
                 - Si
                 - No
 </code></pre>
-
 <h2 id="ejemplo-no2-alimentador-principal-de-una-vivienda">Ejemplo No.2 Alimentador principal de una vivienda</h2>
 <p>Se suministrará energía a una vivienda que consume 2000 VA dedicados con una tensión de 120 V de Fase a Neutro y un factor de potencia de 0.9. La temperatura ambiente promedio en general de todo el año más alta es de 35 °C. La tubería es de PVC subterránea con una longitud de circuito de 15 metros . La tensión ha suministrar es de 120 V de corriente alterna, la eficiencia del alimentador es ideal.</p>
 <p>La mayor parte de los datos para este ejemplo son dados pero será necesario de considerar si es un alimentador o un circuito derivado, para el ejemplo mencionado se considera como alimentador y la pérdida de tensión será de 2%. El calibre seleccionado propuesto será el calibre 6 AWG con aislamiento RHW a 75 °C.</p>
@@ -341,7 +330,6 @@ Autoajustar   : Ajuste para la selección adecuada del conductor.
 Vivienda,1F-2H,1800,2000,Aceptable,0.9,100,100,15,PVC,35,6 AWG,13.3,1,RHW 75C,60.8212,2.0761,0.0729,2.149,50,16.6667,16.6667,1,0.9428,47.1405,0.0322,1.0753,120,0.8961,8,1Px25A,10kA,2,121.6425,1,160.6061,282.2485,2.4,3.9,30,15,Alimentador,1
 
 </code></pre>
-
 <p>Para dimensionar la tubería utilizamos la sección total 282.2485 mm².</p>
 <p><img alt="ductos" src="https://i.ibb.co/Wvsxvgg/SELISP-ALUMINIO.jpg" /></p></div>
             </div>
@@ -367,16 +355,13 @@ Vivienda,1F-2H,1800,2000,Aceptable,0.9,100,100,15,PVC,35,6 AWG,13.3,1,RHW 75C,60
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
+                <p>From here you can search these documents. Enter your search terms below.</p>
                 <form>
                     <div class="form-group">
                         <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
