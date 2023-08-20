@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="SELisp generador de memoría técnica descriptiva">
+  <meta name="author" content="Marco Polo Jácome Toss">
+  <meta name="generator" content="SELisp.com">  
+  <title>SELisp Generador</title>
+  
+  <!-- Agregar el enlace al archivo CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+    body {
+        background-color: #fcfcfc; 
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: rgb(51, 51, 51);
+        line-height: 1.4;
+        font-size: 1em;
+    }
+    .navbar {
+        background-color: #f8f9fa;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">SELisp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <button id="logoutButton" class="btn btn-secondary">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <h1 class="mb-4">Selisp Generador</h1>
+    <div id="userGreeting"></div>
+
+    <div class="mt-4">
+      <p>Ingrese la información correspondiente</p>
+      <form id="myreport" action="report.html" method="get" target="_blank">
+        <div class="form-group">
+          <label for="material">Material:</label>
+          <select class="form-control" id="material" name="material">
+            <option value="cobre">Cobre</option>
+            <option value="aluminio">Aluminio</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="datos">Cadena de texto:</label>
+          <input type="text" class="form-control" id="datos" name="datos">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="myFunction()">Generar reporte</button>
+      </form>
+    </div>
+
+    <a href="https://wa.me/34666777888"></a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 Selisp Generador. Todos los derechos reservados.</p>
+  </div>
+
+  <!-- Agregar el enlace a los archivos JavaScript de Bootstrap y tu propio script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+    function myFunction() {
+      document.getElementById("myreport").submit();
+    }
+
+    const userId = localStorage.getItem('userId'); // Recuperar el nombre de usuario almacenado en el Local Storage
+
+    if (userId) {
+      const userGreeting = document.getElementById('userGreeting');
+      userGreeting.textContent = `Producto: ${userId}`;
+
+      const logoutButton = document.getElementById('logoutButton');
+      logoutButton.addEventListener('click', function() {
+        // Eliminar el valor almacenado en el Local Storage
+        localStorage.removeItem('userId');
+        // Redirigir al usuario de vuelta al inicio de sesión
+        window.location.href = 'login.html';
+      });
+    } else {
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>

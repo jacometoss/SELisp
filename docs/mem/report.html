@@ -1,0 +1,490 @@
+<html>
+
+<meta charset="UTF-8">
+<meta name="description" content="SELisp generador de memoría técnica descriptiva">
+<meta name="author" content="Marco Polo Jácome Toss">
+ <meta name="generator" content="SELisp.com">
+<title>Reporte de circuito</title>
+<head>
+  <script>
+    function myFunction() {
+      document.getElementById("myreport").submit();
+    }
+
+    const userId = localStorage.getItem('userId'); // Recuperar el nombre de usuario almacenado en el Local Storage
+
+    if (userId) {
+      const userGreeting = document.getElementById('userGreeting');
+      userGreeting.textContent = `Producto: ${userId}`;
+
+      const logoutButton = document.getElementById('logoutButton');
+      logoutButton.addEventListener('click', function() {
+        // Eliminar el valor almacenado en el Local Storage
+        localStorage.removeItem('userId');
+        // Redirigir al usuario de vuelta al inicio de sesión
+        window.location.href = 'login.html';
+      });
+    } else {
+      window.location.href = 'login.html';
+    }
+  </script>
+  
+<script>
+	
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+
+</script>
+
+<script>
+
+var material = getParameterByName('material');
+/*document.write(material);
+*/
+var cadena = getParameterByName('datos');
+var dato = cadena.split(',')
+/*
+document.write(cadena)
+document.write('<br>');
+var dato = cadena.split(',');
+document.write(dato[0]);
+document.write('<br>');*/
+</script>
+
+<style type="text/css">
+
+	body{
+	font-family: 'Gideon', serif;
+
+	 
+	}
+	#CeSE fieldset{
+		
+	 font-family: 'Source Code Pro', monospace;
+	 font-size: 0.9em;
+	 color: black;
+	 border: 1px solid #727273;
+	  background: rgba(200,196,196, 0.05);
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  padding-left: 20px;
+	  padding-right: 20px;
+			-webkit-border-radius: 10 px;
+			-moz-border-radius: 0 px; 
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+			-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);	 
+	 
+	}	
+	
+	#CeSE label
+	{
+	
+		font-family: arial;
+		font-size: 16px;
+		color: #A4A4A4;
+		margin-top:10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+    button {
+	
+		background: #FFF;
+		border: 1px solid #CCC;
+		margin-top: 15px;
+		padding: 5px 15px 5px 15px;
+		color: #A4A4A4;
+		background-color: #FCFCFC;
+		border-radius: 0px;
+	}
+
+	button:hover {
+		
+		color: #045FB4;
+		background-color:#E0ECF8;
+		background: #fcfcfc;
+		border-color: #045FB4;
+	}
+
+
+	
+	
+	#CeSE input[type=text],textarea{
+			border: 1px solid #CCC;
+			color: #424242;
+			display: block;
+			height: 15px;
+			font-family:arial; 
+			font-weight:normal; 
+			font-size:14px;
+			line-height:14px;
+			margin-bottom: 5px;
+			margin-right: 6px;
+			margin-top: 2px;
+			outline: 0 none;
+			padding: 5px 5px 5px 5px;	
+			width: 99%;
+			border-radius: 1px;
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;    
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+			-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+	#CeSE input[type=checkbox]{
+			border: 1px solid #CCC;
+			color: #424242;
+			display: block;
+			height: 15px;
+			font-family:arial; 
+			font-weight:normal; 
+			font-size:14px;
+			line-height:20px;
+			margin-bottom: 0px;
+			margin-right: 6px;
+			margin-top: 2px;
+			outline: 0 none;
+			padding: 5px 5px 5px 5px;	
+			width: auto;
+			border-radius: 0px;
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;    
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+			-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}	
+	#CeSE input:focus {background: #E0ECF8;
+	border: 1px solid #045FB4;
+	height: 15px;
+	color: #045FB4}
+
+	#CeSE  textarea{
+		border: 1px solid #CCC;
+		color: #424242;
+		display: block;
+		height: 80px;
+		font-family:arial; 
+		font-weight:normal; 
+		font-size:14px;
+		line-height:14px;
+		margin-bottom: 5px;
+		margin-right: 6px;
+		margin-top: 2px;
+		outline: 0 none;
+		padding: 5px 0px 5px 5px;
+		width: 100%;
+		border-radius: 1px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;    
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	}	
+	
+	
+
+	#CeSE  textarea:focus{
+		border: 1px solid #045FB4;
+		background:#E0ECF8;
+		color: #045FB4;
+		display: block;
+		height: 80px;
+		font-family:arial; 
+		font-weight:normal; 
+		font-size:14px;
+		line-height:14px;
+		margin-bottom: 5px;
+		margin-right: 6px;
+		margin-top: 2px;
+		outline: 0 none;
+		padding: 5px 0px 5px 5px;
+		width: 100%;
+		border-radius: 1px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;    
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	}	
+		
+	#CeSE select {
+		background: #FFF;
+		appearance:none;
+		display: block;
+		border: 1px solid #CCC;
+		color: #424242;
+		font-family:arial; 
+		font-weight:normal; 
+		font-size:14px;	
+		margin-bottom: 5px;
+		margin-right: 0px;
+		margin-top: 5px;
+		outline: 0 none;	
+		padding: 5px 5px 5px 5px;	
+		-webkit-appearance:none; 
+		-moz-appearance: none;
+		text-indent: 0.01px;
+		text-overflow: '';
+		width: 100%;
+		height: 30px;
+		line-height:15px;
+		border-radius: 1px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;    
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);	
+	}	
+
+
+	
+	#CeSE select:focus {
+		background: #E0ECF8;
+		appearance:none;
+		display: block;
+		border: 1px solid  #045FB4;
+		color: #045FB4;
+		font-family:arial; 
+		font-weight:normal; 
+		font-size:14px;	
+		margin-bottom: 5px;
+		margin-right: 0px;
+		margin-top: 5px;
+		outline: 0 none;	
+		padding: 5px 5px 5px 5px;	
+		-webkit-appearance:none; 
+		-moz-appearance: none;
+		text-indent: 0.01px;
+		text-overflow: '';
+		width: 100%;
+		height: 30px;
+		line-height:14px;
+		border-radius: 1px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;    
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);	
+	}	
+	#CeSE select option[default] {
+		color: #424242;
+	}
+	
+	p {
+		color: black;
+		font-size:18px;
+	}
+	
+	
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Montserrat&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="sticky-footer.css" rel="stylesheet">
+	
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+</head>	
+<body>
+ <div class="container">
+
+<h2>Reporte de circuito</h2>
+<h3>Descripción del circuito</h3>
+<p>Para la selección adecuada del conductor la memoría presente se basa en la NOM-001-SEDE-2012, Instalaciones Eléctricas  
+con los datos de carga mostrados. La validación de los conductores es por medio de capacidad de corriente y
+pérdida de tensión.
+</p>
+<h3>1) Datos de carga</h3>
+
+<div id="CeSE">
+<fieldset>
+
+Nombre del equipo : <script> document.write(dato[0]); </script></br>
+Alimentación <b>[Sistema]</b> :  <script> document.write(dato[1]); </script> (F: Fases, H: Hilos)</br>
+Tipo <b>[TAD]</b> : <script> document.write(dato[41]); </script></br>
+Potencia <b>[P]</b> :  <script> document.write(dato[2]); </script> W</br>
+Potencia aparente<b> [S]</b> :  <script> document.write(dato[3]); </script> VA</br>
+Tensión <b>[V]</b> :  <script> document.write(dato[27]); </script> V</br>
+Conductor <b>[Estado]</b> :  <script> document.write(dato[4]); </script> </br>
+Factor de potencia <b>[Fp]</b> :  <script> document.write(dato[5]); </script> </br>
+Eficiencia <b>[Eff]</b> :  <script> document.write(dato[6]); </script> %</br>
+Factor de carga <b>[Fc]</b> :  <script> document.write(dato[7]); </script>%</br>
+Factor protección <b>[Fprot]</b> : <script> document.write(dato[42]*100); </script>%</br>
+Factor de ampacidad <b>[Famp]</b> : <script> document.write(dato[43]*100); </script>%</br>
+Longitud <b>[L]</b> :  <script> document.write(dato[8]); </script> mts.</br>
+Tubería<b>[M]</b> :  <script> document.write(dato[9]); </script> </br>
+Temperatura ambiente <b>[Ta]</b> :  <script> document.write(dato[10]); </script> °C </br>
+</fieldset>
+
+</div>  
+<h3>2) Análisis del conductor seleccionado con las condiciones de carga</h3>
+<p>	Para el dimensionamiento de un conductor se considera el efecto magnético, temperatura ambiente, ampacidad y pérdidas de tensión. </p>
+<p>	La corriente nominal de un <b>circuito monofásico y trifásico</b> se obtienen con las fórmulas siguientes :</p>
+<center><img src="https://latex.codecogs.com/svg.latex?\large&space;I_{1\varphi}=\frac{P}{V_{F}\cos&space;\theta&space;}&space;\;&space;\;&space;,&space;\;&space;\;&space;I_{3\varphi}=\frac{P}{\sqrt{3}&space;V_{L}\cos&space;\theta&space;}" title="\large I_{1\varphi}=\frac{P}{V_{F}\cos \theta } \; \; , \; \; I_{3\varphi}=\frac{P}{\sqrt{3} V_{L}\cos \theta }" />
+</center>	
+
+<h3>2.1) Datos del conductor seleccionado</h3>
+<p>	El conductor seleccionado presenta las siguientes características. </p>
+<div id="CeSE">
+<fieldset>
+Conductor <b>[Cond]</b>: <script> document.write(dato[11]); </script> [<script> document.write(dato[12]); </script> mm²]</br>
+Cond. Fase <b>[Nc]</b>: <script> document.write(dato[13]); </script></br>
+Aislamiento <b>[Aislm]</b>: <script> document.write(dato[14]); </script></br>
+Sección del conductor <b>[Acond]</b>: <script> document.write(dato[15]); </script> mm²</br>
+<b>[Tabla 9 - Resistencia y Reactancia]</b></br>
+R Cos A <b>[R]</b>: <script> document.write(dato[16]); </script> Ohm/km a <script> document.write(dato[10]); </script> °C</br>
+X Sen A <b>[X]</b>: <script> document.write(dato[17]); </script> Ohm/km</br>
+Zcond <b>[Z]</b>: <script> document.write(dato[18]); </script> Ohm/km</br>
+Ampacidad <b>[AMPc]</b>:<script> document.write(dato[19]); </script> A</br>
+</fieldset>
+</div>  
+<br><br>
+<h3>2.2 Selección de conductor por amapacidad </h3>
+
+<p>La capacidad de corriente se ve afectada debido al agrupamiento de conductores (F.A.), temperatura generada en la tubería 
+y la temperatura exterior (F.T.); por lo tanto, es necesario conocer la densidad de corriente real del conductor.</p>
+<p>Para el ajuste del conductor por temperatura se utiliza la fórmula siguiente :</p>
+<center>
+<img src="https://latex.codecogs.com/svg.latex?\large&space;F_{T}=\sqrt{\frac{T_{cond}-T_{a}^{'}}{T_{cond}-T_{a}}}" title="\large F_{T}=\sqrt{\frac{T_{cond}-T_{a}^{'}}{T_{cond}-T_{a}}}" />
+</center> 
+  <br>
+<div id="CeSE">
+  <fieldset>
+Alimentación <b>[Sistema]</b> : <script> document.write(dato[1]); </script>        <b>[Sección 200-4 a) 200-6 a)]</b></br>
+Conductor <b>[Cond]</b>: <script> document.write(dato[11]); </script>[ <script> document.write(dato[12]); </script> mm²]</br>
+Factor de ampacidad <b>[Famp]</b> :  <script> document.write(dato[42]*100); </script>  % <b>[Sección 210-19 a) 1)]</b></br>
+Corriente nominal <b>[In]</b> : <script> document.write(dato[20]); </script> A</br>
+Corriente por cable <b>[In/Nc]</b> : <script> document.write(dato[21]); </script>   A</br>
+Ampacidad del conductor <b>[ACOND]</b> : <script> document.write(dato[19]); </script>   A</br>
+F.C.A. <b>[FA]</b> : <script> document.write(dato[22]); </script>   <b>[Tabla 310-15(b)(3)(a)]</b></br>
+F.C.T. <b>[FT]</b> : <script> document.write(dato[23]); </script>    <b>[Tabla 310-15(b)(2)(a)]</b></br>
+Ampacidad Corregida <b>[ACONDCO]</b> : <script> document.write(dato[24]); </script> A,             <b>[Sección 210-19 (a)(1)]</b></br>      
+
+</fieldset>
+<h3>2.3 Selección de conductor por caída de tensión </h3> 
+
+<p>La resistencia del <script> document.write(material); </script> y de otros metales aumenta apreciablemente con la temperatura variando en los conductores en servicio  con la intensidad de la corriente y depende de las 
+condiciones del medio que las rodea como es la temperatura ambiente y del mismo conductor es importante 
+conocer la relación entre la temperatura y la resistencia, mostrada en la siguiente fórmula : </p>	
+<center>
+<img src="https://latex.codecogs.com/svg.latex?\large&space;R=R_{0}\left&space;[&space;1&plus;\left&space;(&space;1&plus;&space;\alpha_{0}&space;t_{2}&space;\right&space;)&space;\right&space;]" title="\large R=R_{0}\left [ 1+\left ( 1+ \alpha_{0} t_{2} \right ) \right ]" />
+</center>
+
+
+<p>La reactancia inductiva para circuitos menores a 53.5 mm² puede ser despreciada, no obstante se considera
+para este dimensionamiento de conductor, siendo la impedancia eléctrica del cable dada por la siguiente formula : </p>
+<center>
+<img src="https://latex.codecogs.com/svg.latex?\large&space;Z=&space;R&space;\cos&space;\theta&space;&plus;&space;X_{L}&space;\sin&space;\theta" title="\large Z= R \cos \theta + X_{L} \sin \theta" />
+</center>
+<p>Sustituyendo la resistencia del conductor en la impedancia se obtiene la fórmula siguiente :</p> 
+<center>
+<img src="https://latex.codecogs.com/svg.latex?\large&space;Z=&space;R_{0}\left&space;[&space;1&plus;\left&space;(&space;1&plus;&space;\alpha_{0}t_{2}&space;\right&space;)&space;\right&space;]&space;\cos&space;\theta&space;&plus;&space;X_{L}&space;\sin&space;\theta" title="\large Z= R_{0}\left [ 1+\left ( 1+ \alpha_{0}t_{2} \right ) \right ] \cos \theta + X_{L} \sin \theta" />
+</center> 
+<script>  
+let spt;
+
+if (material === "cobre") {
+  clase = "Clase B, C y D";
+} else if (material === "aluminio") {
+  clase = "Aluminio 1350";
+} 
+</script> 
+<br>
+<div id="CeSE">
+  <fieldset>
+Alimentación <b>[Sistema]</b> : <script> document.write(dato[1]); </script><b> [Sección 200-4 a) 200-6 a)]</b></br>
+Corriente nominal <b>[In]</b> :  <script> document.write(dato[20]); </script> A</br>
+Conductor seleccionado <b>[Cond]</b>:  <script> document.write(dato[11]); </script> [<script> document.write(dato[12]); </script> mm²] </br>
+Conductor por fase <b>[Nc]</b> :  <script> document.write(dato[13]); </script> Conductor / Fase </br>
+Tipo de <script> document.write(material); </script> :<b>  <script> document.write(clase); </script></b></br>
+Sección del <script> document.write(material); </script> :  <script> document.write(dato[12]); </script></b> mm²</br>
+Impedancia total del conductor<b>[Z]</b>:  <script> document.write(dato[25]); </script> Ohms a <script> document.write(dato[10]); </script> °C </br>
+Pérdida de tensión <b>[VD]</b> :  <script> document.write(dato[26]); </script> V</br>
+Pérdida de tensión porcentual<b>[%VD]</b> : <script> document.write(dato[28]); </script>%
+ </fieldset>
+</div> 
+<h3>3) Protección del circuito eléctrico </h3>
+
+<p> Al menos que se permita otra cosa especificamente en otro lugar de la  NOM-001-SEDE-2012, Instalaciones Eléctrica, la protección 
+   contra  sobrecorriente de los  conductores 14 AWG, 12 AWG  y 10 AWG será de 15 A, 20 A y  30 A respectivamente en casos muy especificos.</p> 
+
+<p>Para determinar la protección del circuito derivado o alimentador usamos la sobrecarga utilizando 
+ la corriente nominal del circuito con un 25% adicional de la corriente nominal cuando se trata de circuitos de uso continuo.
+ En este cálculo se considera la ampacidad del conductor como la capacidad de corriente de 
+ la protección siendo ajustado a las condiciones siguientes :</p>
+
+<br>
+<div id="CeSE">
+  <fieldset>
+Alimentación <b>[Sistema]</b> : <script> document.write(dato[1]); </script>	          <b> [Sección 200-4 a)]</b></br>	           	
+Corriente nominal <b>[In]</b> :  <script> document.write(dato[20]); </script>  A</br>
+Conductor seleccionado <b>[Cond]</b>: <script> document.write(dato[11]); </script> [<script> document.write(dato[12]); </script> mm²]</br>
+Conductor por fase <b>[Nc]</b> :  <script> document.write(dato[13]); </script> Conductor(es) / Fase </br>
+Ampacidad del conductor <b>[AMPc]</b> :<script> document.write(dato[24]); </script> A</br>
+Protección <b>[ITM]</b> : <script> document.write(dato[30]); </script></br>
+Capacidad <b>[CC]</b> : <script> document.write(dato[31]); </script></br>
+
+  </fieldset>
+  </div> 
+<script>  
+let spt;
+
+if (dato[41] === "Derivado") {
+  spt = "[Tabla 250-122]";
+} else if (dato[41] === "Alimentador") {
+  spt = "[Tabla 250-66]";
+} 
+</script> 
+
+<h3>4) Conductor de puesta a tierra </h3>
+<p>La selección del conductor de puesta a tierra de basa dependiendo del <b>[TAD]</b> (Alimentador o derivado). </p>
+<div id="CeSE">
+<fieldset>
+Tipo <b>[TAD]</b> :  <script> document.write(dato[41]); </script></br>
+Protección <b>[ITM]</b> :  <script> document.write(dato[30]); </script>,   <b>[Sección 210-20]</b></br>                                               
+Capacidad <b>[CC]</b> : <script> document.write(dato[31]); </script></br>
+Conductor <b>[SPT]</b> : <script> document.write(dato[29]); </script> AWG <b><script> document.write(spt); </script></b> <b>[Sección 200-6]</b> </br>
+  </fieldset>
+  </div> 
+<h3>5) Sección de conductores eléctricos </h3>
+<p>El diámetro de la tubería se basa en una ocupación máxima del 40% para más de tres conductors, pero en caso 
+de 1 o 2 conductores estos porcentajes son de 53% y 31% respectivamente, únicamente se muestran las secciones
+de los conductores para determinar los diámetros de las tuberías eléctricas.</p>
+
+<p>En el plano se especifican las tuberías correspondientes con los datos que se muestran a continuación :</p>
+<div id="CeSE">
+  <fieldset>
+<b> Sección total de  <script> document.write(dato[32]); </script> Conductores + <script> document.write(dato[34]); </script> Conductor de Tierra </br> </b>
+<b>[<script> document.write(dato[32]); </script>  Conductores ] </b>: <script> document.write(dato[33]); </script>  mm² </br>  
+<b>[<script> document.write(dato[34]); </script> Tierra] </b> : <script> document.write(dato[35]); </script> mm² </br>                                           
+Sección total <b>[ST]</b> : <script> document.write(dato[36]); </script> mm² </br>
+  </fieldset>
+<p>La sección total se utiliza para el cálculo de la tubería eléctrica y corresponde a los conductores 
+indicados en el bloque de resultados estos pueden manipularse de manera separada.</p>  
+  </div></br> 
+<h3>6) Longitud de conductores requeridos y peso</h3>
+<p>El peso y longitudes necesarias de los conductores implementados son : </p>
+<div id="CeSE">
+  <fieldset>
+Sección total de <script> document.write(dato[32]); </script> Conductores + <script> document.write(dato[34]); </script> Conductor de Tierra</br> 
+<b>[Fase]</b> :  <script> document.write(dato[37]);</script> kg</br>  
+<b>[Tierra]</b> :  <script> document.write(dato[38]); </script> kg</br>  
+<b>[LFN]</b> :  <script> document.write(dato[39]); </script> mts. <b>[<script> document.write(dato[11]); </script>]</b></br> 
+<b>[LT]</b> :  <script> document.write(dato[40]); </script> mts.<b> [<script> document.write(dato[29]); </script> AWG]</b></br>                                            
+
+  </fieldset>
+  </div>
+  </br> 
+
+  </div>
+</body>  
+</html>
