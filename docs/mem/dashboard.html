@@ -35,7 +35,10 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">SELisp</a>
+  <a class="navbar-brand font-weight-normal" href="#">
+    <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+   SELisp
+  </a>  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,12 +52,12 @@
   </nav>
   
   <div class="container mt-5">
-    <h1 class="mb-4">Selisp Generador</h1>
+    <h1 class="mb-4 font-weight-bold">Selisp Generador</h1>
     <div id="userGreeting"></div>
 
     <div class="mt-4">
       <p>Ingrese la información correspondiente</p>
-      <form id="myreport" action="report.html" method="get" target="_blank">
+      <form id="myreport" class="needs-validation" action="report.html" method="get" target="_blank" needs-validationnovalidate>
         <div class="form-group">
           <label for="material">Material:</label>
           <select class="form-control" id="material" name="material">
@@ -64,7 +67,7 @@
         </div>
         <div class="form-group">
           <label for="datos">Cadena de texto:</label>
-          <input type="text" class="form-control" id="datos" name="datos">
+          <input type="text" class="form-control" id="datos" name="datos" required>
         </div>
         <button type="button" class="btn btn-primary" onclick="myFunction()">Generar reporte</button>
       </form>
