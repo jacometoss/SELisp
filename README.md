@@ -1,5 +1,5 @@
 
-![SELisp](https://i.ibb.co/Wf88wxP/selisp.jpg)
+![SELisp](https://raw.githubusercontent.com/jacometoss/SELisp/1d497dcb52c15b7545d4619467cbe138f87f7b02/docs/img/SELisp_banner.png)
 
 ## SELisp 
 
