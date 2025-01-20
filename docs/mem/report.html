@@ -6,28 +6,7 @@
  <meta name="generator" content="SELisp.com">
 <title>Reporte de circuito</title>
 <head>
-  <script>
-    function myFunction() {
-      document.getElementById("myreport").submit();
-    }
 
-    const userId = localStorage.getItem('userId'); // Recuperar el nombre de usuario almacenado en el Local Storage
-
-    if (userId) {
-      const userGreeting = document.getElementById('userGreeting');
-      userGreeting.textContent = `Producto: ${userId}`;
-
-      const logoutButton = document.getElementById('logoutButton');
-      logoutButton.addEventListener('click', function() {
-        // Eliminar el valor almacenado en el Local Storage
-        localStorage.removeItem('userId');
-        // Redirigir al usuario de vuelta al inicio de sesión
-        window.location.href = 'index.html';
-      });
-    } else {
-      window.location.href = 'index.html';
-    }
-  </script>
   
 <script>
 	
@@ -488,5 +467,28 @@ Sección total de <script> document.write(dato[32]); </script> Conductores + <sc
   </br> 
 <div id="userGreeting"></div>
   </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myreport").submit();
+    }
+
+    const userId = localStorage.getItem('userId'); // Recuperar el nombre de usuario almacenado en el Local Storage
+
+    if (userId) {
+      const userGreeting = document.getElementById('userGreeting');
+      userGreeting.textContent = `Producto: ${userId}`;
+
+      const logoutButton = document.getElementById('logoutButton');
+      logoutButton.addEventListener('click', function() {
+        // Eliminar el valor almacenado en el Local Storage
+        localStorage.removeItem('userId');
+        // Redirigir al usuario de vuelta al inicio de sesión
+        window.location.href = 'index.html';
+      });
+    } else {
+      window.location.href = 'index.html';
+    }
+  </script>	 
 </body>  
 </html>
