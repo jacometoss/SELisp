@@ -436,14 +436,17 @@ Capacidad <b>[CC]</b> : <script> document.write(dato[31]); </script></br>
   </fieldset>
   </div> 
 <script>  
-let spt;
+let spt = "";
 
-if (dato[42] === "Derivado") {
-  spt = "[Tabla 250-122]";
-} else if (dato[42] === "Alimentador") {
-  spt = "[Tabla 250-66]";
-} 
+if (dato[41] === "Derivado") {
+	spt = "[Tabla 250-122]";
+} else if (dato[41] === "Alimentador") {
+	spt = "[Tabla 250-66]";
+}
+	
 </script> 
+
+	
 
 <h3>4) Conductor de puesta a tierra </h3>
 <p>La selección del conductor de puesta a tierra de basa dependiendo del <b>[TAD]</b> (Alimentador o derivado). </p>
