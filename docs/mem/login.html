@@ -76,7 +76,7 @@
 
       <div class="form-floating">
         <input type="text" class="form-control" id="username" required>
-        <label for="username">Producto</label>
+        <label for="uuid">Producto</label>
       </div>
 
       <button class="w-100 btn btn-lg btn-secondary mt-3" type="submit">Login</button>
@@ -85,7 +85,7 @@
   </main>
 
   <div class="footer">
-    <p>&copy; 2023 SELisp.com. Todos los derechos reservados.</p>
+    <p>&copy; 2025 SELisp.com. Todos los derechos reservados.</p>
   </div>
 
   <!-- Agregar el enlace a los archivos JavaScript de Bootstrap y tu propio script -->
@@ -100,16 +100,16 @@
     loginForm.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      const username = document.getElementById('username').value;
+      const username = document.getElementById('uuid').value;
 
       // Simulate authentication using the JSON data
       fetch('users.json')
         .then(response => response.json())
         .then(users => {
-          const user = users.find(u => u.username === username);
+          const user = users.find(u => u.uuid === uuid);
           if (user) {
             // Simulate storing the user ID in localStorage
-            localStorage.setItem('userId', user.username);
+            localStorage.setItem('userId', user.uuid);
             // Redirect to dashboard or other protected page
             window.location.href = 'dashboard.html';
           } else {
