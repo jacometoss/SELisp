@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>History - SELisp</title>
+        <title>SUIT - SELisp</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href=".." class="nav-link">Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Módulos</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Módulos</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -57,7 +57,7 @@
 </li>
                                     
 <li>
-    <a href="../suit/" class="dropdown-item">SUIT</a>
+    <a href="./" class="dropdown-item active" aria-current="page">SUIT</a>
 </li>
                                     
 <li>
@@ -66,7 +66,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">History</a>
+                                <a href="../history/" class="nav-link">History</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../buy/" class="nav-link">Comprar</a>
@@ -83,12 +83,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../suit/" class="nav-link">
+                                <a rel="prev" href="../aduct/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../buy/" class="nav-link">
+                                <a rel="next" href="../history/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -110,8 +110,20 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#visual-lisp-y-autolisp" class="nav-link">Visual LISP y AutoLISP</a>
+            <li class="nav-item" data-bs-level="1"><a href="#suite-selisp" class="nav-link">SUITE SELisp</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#que-paquetes-incluye" class="nav-link">¿Qué paquetes incluye?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#que-puedes-realizar-con-esta-suite" class="nav-link">¿Qué puedes realizar con esta SUITE?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#donde-puedo-adquirir-suite-selisp" class="nav-link">¿Donde puedo adquirir SUITE SELisp?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -120,16 +132,68 @@
                     <div class="col-md-9" role="main">
 
 <p><img alt="SELisp" src="https://raw.githubusercontent.com/jacometoss/SELisp/1d497dcb52c15b7545d4619467cbe138f87f7b02/docs/img/SELisp_banner.png" /></p>
-<h2 id="visual-lisp-y-autolisp">Visual LISP y AutoLISP</h2>
-<p>AutoLISP se derivó de una versión muy temprana de <a href="https://es.wikipedia.org/w/index.php?title=XLISP&amp;action=edit&amp;redlink=1">XLISP</a>, que fue creado por David Betz. El lenguaje fue introducido en AutoCAD versión 2.18 en enero de 1986, y siguió mejorando en sucesivas versiones hasta la etapa 13 en febrero de 1995. Después de eso, su desarrollo fue descuidado por Autodesk en favor de los entornos de desarrollo más de moda como <a href="https://es.wikipedia.org/wiki/VBA">VBA</a> , <a href="https://es.wikipedia.org/wiki/.NET">.NET</a> y <a href="https://es.wikipedia.org/wiki/ObjectARX">ObjectARX</a>. Sin embargo, se ha mantenido el idioma principal de AutoCAD para la personalización del usuario.</p>
-<p>Vital-LISP, una versión mejorada considerablemente de AutoLISP incluyendo una IDE, depurador y compilador, y el soporte ActiveX, se ha desarrollado y vendido por tercera parte de desarrolladores de Software. Vital LISP fue una conjunción del lenguaje AutoLISP existente que agregó VBA -como el acceso al modelo de objetos de AutoCAD, reactores (el control de eventos para los objetos de AutoCAD), general ActiveX de apoyo, y algunos otras funciones generales de Lisp. Autodesk compró este, cambió el nombre de Visual LISP, y brevemente se vende como un complemento para AutoCAD 14 lanzado en mayo de 1997. Fue incorporado en AutoCAD 2000 lanzado en marzo de 1999, en sustitución de AutoLISP.</p></div>
+<h1 id="suite-selisp">SUITE SELisp</h1>
+<p><strong>SUITE SELisp</strong> es un conjunto de aplicaciones para AutoCAD, diseñado para el dimensionamiento de conductores eléctricos de cobre y aluminio en sistemas de baja tensión de corriente alterna. Integra módulos especializados que permiten realizar cálculos precisos y eficientes directamente sobre planos eléctricos. Es ideal para ingenieros, arquitectos, diseñadores y proyectistas eléctricos. Disponible con licencia digital válida por 6 meses o 1 año, según tus necesidades.</p>
+<p>Más información en: <a href="https://selisp.com"><strong>https://selisp.com</strong></a></p>
+<h2 id="que-paquetes-incluye">¿Qué paquetes incluye?</h2>
+<p><strong>SUITE SELisp</strong> incluye los siguientes módulos:</p>
+<ul>
+<li><strong>MBTCU</strong>: Dimensionamiento de conductores de cobre en sistemas de baja tensión de corriente alterna.</li>
+<li><strong>MBTAL</strong>: Dimensionamiento de conductores de aluminio en sistemas de baja tensión de corriente alterna.</li>
+<li><strong>ADUCT</strong>: Cálculo y dimensionamiento de tuberías tipo <em>conduit</em>.</li>
+</ul>
+<p>Diseñados para integrarse con AutoCAD, estos módulos permiten realizar cálculos eléctricos directamente sobre planos, optimizando tiempos y asegurando precisión en el diseño.</p>
+<table>
+<thead>
+<tr>
+<th>Id</th>
+<th>Modulo</th>
+<th>Descripción</th>
+<th>Versión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td><strong>MODBTCU</strong></td>
+<td>Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de cobre utilizados en sistemas de baja tensión.</td>
+<td>0.2.44.10</td>
+</tr>
+<tr>
+<td>02</td>
+<td><strong>MODBTAL</strong></td>
+<td>Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de aluminio utilizados en sistemas de baja tensión.</td>
+<td>0.2.44.10</td>
+</tr>
+<tr>
+<td>03</td>
+<td><strong>ADUCT</strong></td>
+<td>Rutina para la plataforma AutoCAD que permite dimensionar tuberías eléctricas.</td>
+<td>0.2.05</td>
+</tr>
+<tr>
+<td>04</td>
+<td><strong>MEM</strong></td>
+<td>Generador de Memoria Eléctrica Descriptiva</td>
+<td>0.0.1.0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>SUITE SELisp</strong> incluye en un solo archivo los módulos de dimensionamiento eléctrico, permitiendo una instalación sencilla y un uso centralizado dentro de AutoCAD. Los módulos disponibles —<strong>MBTCU</strong>, <strong>MBTAL</strong> y <strong>ADUCT</strong>— cuentan con licencia digital válida por 6 o 12 meses, y están diseñados para facilitar cálculos precisos de conductores y tuberías en sistemas de baja tensión de corriente alterna.</p>
+<p><strong>Generador de Memoria Eléctrica Descriptiva</strong>: Es una herramienta diseñada para automatizar la elaboración de la memoria técnica descriptiva de instalaciones eléctricas en baja tensión. Permite documentar de forma clara y estructurada conforme a las normativas vigentes (NOM-001-SEDE o NEC), características de los circuitos alimentadores y derivados, tipo de conductores, protecciones, canalizaciones y consideraciones generales del proyecto.</p>
+<p>Ideal para integrarse a proyectos ejecutivos, garantiza uniformidad, ahorro de tiempo y cumplimiento normativo. Compatible con AutoCAD y otros entornos de diseño eléctrico.</p>
+<h2 id="que-puedes-realizar-con-esta-suite">¿Qué puedes realizar con esta SUITE?</h2>
+<p>La práctica <strong>SUITE SELisp</strong> permite el dimensionamiento de conductores eléctricos, tanto para circuitos alimentadores como derivados, de forma eficiente y precisa. Puedes aplicar los criterios de la <strong>NOM-001-SEDE</strong> (México) o del <strong>NEC</strong> (<em>National Electrical Code</em>) según el proyecto. Diseñada para integrarse con AutoCAD, esta suite facilita el cumplimiento normativo y optimiza el diseño de instalaciones eléctricas en sistemas de baja tensión de corriente alterna.</p>
+<h2 id="donde-puedo-adquirir-suite-selisp">¿Donde puedo adquirir SUITE SELisp?</h2>
+<p>Para adquirir esta <strong>SUITE</strong>, es necesario completar el formulario disponible en el apartado de compras; haz <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSdoYVIHotnbrNWDDdKdG7fvHwpsHYxtqFgtRWGwGGuMYkIH4w/viewform">clic aquí</a></strong> para acceder. Una vez enviada tu solicitud, serás contactado vía telefónica o por correo electrónico. Posteriormente, deberás adjuntar tu comprobante de pago (bauche) junto con el folio de referencia correspondiente.</p>
+<p>Si deseas factura, también deberás adjuntar tu <strong>constancia de situación fiscal del SAT</strong> y especificar el <strong>régimen fiscal</strong> al que deseas que se emita. Esta información debe enviarse junto con el comprobante de pago para procesar correctamente tu factura.</p></div>
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
                 <p>© 2025 SELisp.com. Todos los derechos reservados.</p>
-
+   
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>
         <script>

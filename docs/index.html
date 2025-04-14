@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,23 +10,18 @@
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>SELisp</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atelier-forest-light.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atelier-forest-light.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/scilab.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/lisp.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
         <script>hljs.highlightAll();</script> 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBDJ62SK8W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GBDJ62SK8W');
-</script>
     </head>
 
     <body class="homepage">
@@ -34,7 +29,7 @@
             <div class="container">
                 <a class="navbar-brand" href=".">SELisp</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -42,11 +37,11 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Inicio</a>
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Inicio</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Módulos <b class="caret"></b></a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Módulos</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -60,22 +55,30 @@
 <li>
     <a href="aduct/" class="dropdown-item">ADUCT</a>
 </li>
+                                    
+<li>
+    <a href="suit/" class="dropdown-item">SUIT</a>
+</li>
+                                    
+<li>
+    <a href="https://selisp.com/mem/login.html" class="dropdown-item">Generador MEM</a>
+</li>
                                 </ul>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="history/" class="nav-link">History</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="buy/" class="nav-link">Comprar</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="license/" class="nav-link">Licencia</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -96,28 +99,28 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#selisp" class="nav-link">SELisp</a>
+            <li class="nav-item" data-bs-level="2"><a href="#selisp" class="nav-link">SELisp</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#comandos" class="nav-link">Comandos</a>
+            <li class="nav-item" data-bs-level="2"><a href="#comandos" class="nav-link">Comandos</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#modulos-y-rutinas" class="nav-link">Módulos y rutinas</a>
+            <li class="nav-item" data-bs-level="2"><a href="#modulos-y-rutinas" class="nav-link">Módulos y rutinas</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -152,8 +155,7 @@
 <th>Id</th>
 <th>Modulo</th>
 <th>Descripción</th>
-<th>Precio</th>
-<th style="text-align: center;">Versión</th>
+<th>Versión</th>
 </tr>
 </thead>
 <tbody>
@@ -161,50 +163,43 @@
 <td>01</td>
 <td><strong>MODBTCU</strong></td>
 <td>Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de cobre utilizados en sistemas de baja tensión.</td>
-<td>$20.USD</td>
-<td style="text-align: center;">0.2.44.10</td>
+<td>0.2.44.10</td>
 </tr>
 <tr>
 <td>02</td>
 <td><strong>MODBTAL</strong></td>
 <td>Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de aluminio utilizados en sistemas de baja tensión.</td>
-<td>$20.USD</td>
-<td style="text-align: center;">0.2.44.10</td>
+<td>0.2.44.10</td>
 </tr>
 <tr>
 <td>03</td>
 <td><strong>MODMTCU</strong></td>
 <td>Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de cobre utilizados en sistemas de media tensión dentro de ciertos parámetros de carga.</td>
-<td>$15.USD</td>
-<td style="text-align: center;">0.2.43.05</td>
+<td>0.2.43.05</td>
 </tr>
 <tr>
 <td>04</td>
 <td><strong>MODMTAL</strong></td>
 <td>Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de aluminio utilizados en sistemas de media tensión dentro de ciertos parámetros de carga.</td>
-<td>$15.USD</td>
-<td style="text-align: center;">0.2.43.05</td>
+<td>0.2.43.05</td>
 </tr>
 <tr>
 <td>05</td>
 <td><strong>ADUCT</strong></td>
 <td>Rutina para la plataforma AutoCAD que permite dimensionar tuberías eléctricas.</td>
-<td>$5.USD</td>
-<td style="text-align: center;">0.2.05</td>
+<td>0.2.05</td>
 </tr>
 <tr>
 <td>06</td>
 <td><strong>MODBTPV01</strong></td>
 <td>Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de cobre estándar en corriente directa para sistemas fotovoltaicos.</td>
-<td>$10.USD</td>
-<td style="text-align: center;">0.1.1.01</td>
+<td>0.1.1.01</td>
 </tr>
 <tr>
 <td>07</td>
 <td><strong>MODBTPV02</strong></td>
 <td>Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de aluminio estándar en corriente directa para sistemas fotovoltaicos.</td>
-<td>$10.USD</td>
-<td style="text-align: center;">0.1.1.01</td>
+<td>0.1.1.01</td>
 </tr>
 </tbody>
 </table></div>
@@ -213,12 +208,10 @@
 
         <footer class="col-md-12">
             <hr>
-                <p>Creado por Marco Polo Jácome Toss</p>
-				
-            <p>©2024 <a href="https://www.selisp.com/">SELisp</a>.</p>
+                <p>© 2025 SELisp.com. Todos los derechos reservados.</p>
+            <p>Desarrollado por <a href="https://www.linkedin.com/in/jacometoss/?_l=es_ES">Marco Polo Jácome Toss</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -232,7 +225,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -252,7 +245,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">
@@ -292,6 +285,6 @@
 </html>
 
 <!--
-MkDocs version : 1.5.3
-Build Date UTC : 2024-08-03 05:54:49.950202+00:00
+MkDocs version : 1.6.1
+Build Date UTC : 2025-04-14 20:36:23.449739+00:00
 -->

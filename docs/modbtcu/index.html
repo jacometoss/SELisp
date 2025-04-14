@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +10,18 @@
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>MODBTCU - SELisp</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atelier-forest-light.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atelier-forest-light.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/scilab.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/lisp.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
         <script>hljs.highlightAll();</script> 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBDJ62SK8W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GBDJ62SK8W');
-</script>
-	    
     </head>
 
     <body>
@@ -36,7 +29,7 @@
             <div class="container">
                 <a class="navbar-brand" href="..">SELisp</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -44,15 +37,15 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href=".." class="nav-link">Inicio</a>
                             </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Módulos <b class="caret"></b></a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Módulos</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">MODBTCU</a>
+    <a href="./" class="dropdown-item active" aria-current="page">MODBTCU</a>
 </li>
                                     
 <li>
@@ -62,22 +55,30 @@
 <li>
     <a href="../aduct/" class="dropdown-item">ADUCT</a>
 </li>
+                                    
+<li>
+    <a href="../suit/" class="dropdown-item">SUIT</a>
+</li>
+                                    
+<li>
+    <a href="https://selisp.com/mem/login.html" class="dropdown-item">Generador MEM</a>
+</li>
                                 </ul>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../history/" class="nav-link">History</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../buy/" class="nav-link">Comprar</a>
                             </li>
-                            <li class="navitem">
+                            <li class="nav-item">
                                 <a href="../license/" class="nav-link">Licencia</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -98,64 +99,64 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#documentacion-modbtcu-024410" class="nav-link">Documentación MODBTCU (0.2.44.10)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#documentacion-modbtcu-024410" class="nav-link">Documentación MODBTCU (0.2.44.10)</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#comando" class="nav-link">Comando</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#informacion-general" class="nav-link">Información General</a>
+            <li class="nav-item" data-bs-level="2"><a href="#comando" class="nav-link">Comando</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#datos-de-carga" class="nav-link">Datos de carga</a>
+            <li class="nav-item" data-bs-level="2"><a href="#informacion-general" class="nav-link">Información General</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#alimentacion-y-tuberias" class="nav-link">Alimentación y tuberías</a>
+            <li class="nav-item" data-bs-level="2"><a href="#datos-de-carga" class="nav-link">Datos de carga</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#tension" class="nav-link">Tensión</a>
+            <li class="nav-item" data-bs-level="2"><a href="#alimentacion-y-tuberias" class="nav-link">Alimentación y tuberías</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#perdida-de-tension" class="nav-link">Pérdida de tensión</a>
+            <li class="nav-item" data-bs-level="2"><a href="#tension" class="nav-link">Tensión</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#calibre" class="nav-link">Calibre</a>
+            <li class="nav-item" data-bs-level="2"><a href="#perdida-de-tension" class="nav-link">Pérdida de tensión</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#aislamiento" class="nav-link">Aislamiento</a>
+            <li class="nav-item" data-bs-level="2"><a href="#calibre" class="nav-link">Calibre</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#temperatura-de-operacion" class="nav-link">Temperatura de operación</a>
+            <li class="nav-item" data-bs-level="2"><a href="#aislamiento" class="nav-link">Aislamiento</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#numero-de-conductores-por-fase" class="nav-link">Número de conductores por fase</a>
+            <li class="nav-item" data-bs-level="2"><a href="#temperatura-de-operacion" class="nav-link">Temperatura de operación</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#condiciones-de-carga" class="nav-link">Condiciones de carga</a>
+            <li class="nav-item" data-bs-level="2"><a href="#numero-de-conductores-por-fase" class="nav-link">Número de conductores por fase</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#proteccion-y-conductor" class="nav-link">Protección y conductor</a>
+            <li class="nav-item" data-bs-level="2"><a href="#condiciones-de-carga" class="nav-link">Condiciones de carga</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#proteccion-y-conductor" class="nav-link">Protección y conductor</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -273,12 +274,10 @@ Autoajustar   : Ajuste para la selección adecuada del conductor.
 
         <footer class="col-md-12">
             <hr>
-                <p>Creado por Marco Polo Jácome Toss</p>
-				
-            <p>©2024 <a href="https://www.selisp.com/">SELisp</a>.</p>
+                <p>© 2025 SELisp.com. Todos los derechos reservados.</p>
+
         </footer>
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -292,7 +291,7 @@ Autoajustar   : Ajuste para la selección adecuada del conductor.
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -312,7 +311,7 @@ Autoajustar   : Ajuste para la selección adecuada del conductor.
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">
