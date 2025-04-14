@@ -1,14 +1,12 @@
 [
   {
-    "username": "52FEBC3F-3785-460F-ABF4-CCAA11C4912E",
-    "password": "52FEBC3F-3785-460F-ABF4-CCAA11C4912E"
+    "fullname": "Marco Polo J. T.",
+    "email": "jacometoss@aol.com",
+    "uuid": "B8BDF57A-51B1-541E-896F-93AE53E45D9C"
   },
   {
-    "username": "jacometoss",
-    "password": "password2"
-  },
-  {
-    "username": "user3",
-    "password": "password3"
+    "fullname": "",
+    "email": "",
+    "uuid": "1"
   }
 ]
