@@ -1,11 +1,10 @@
-
 ![SELisp](https://raw.githubusercontent.com/jacometoss/SELisp/1d497dcb52c15b7545d4619467cbe138f87f7b02/docs/img/SELisp_banner.png)
 
 ## SELisp 
 
 Son aplicaciones desglosadas en módulos para la plataforma AutoCAD / Draftsight bajo su estándar de código actual para obtener el dimensionamiento de conductores eléctricos y el desglose de una memoria descriptiva.
 
-Los módulos únicamente pueden ser cargados en versiones de Autodesk completas y en versiones de Draftsight, actualmente existe una versión de AutoCAD LT de bajo costo pero esta no incluye el soporte para poder correr estas aplicaciones.
+Los módulos únicamente pueden ser cargados en versiones de Autodesk completas y en versiones de Draftsight o BricsCAD, actualmente existe una versión de AutoCAD LT de bajo costo pero esta no incluye el soporte para poder correr estas aplicaciones.
 
 SELisp como su nombre lo indica son módulos para los sistemas eléctricos de baja tensión abreviado como SE y en particular la palabra LISP viene de el procesamiento de listas.
 
@@ -19,29 +18,31 @@ El acrónimo LISP significa "LISt Processor" ('Procesamiento de listas').
 
 Los comandos disponibles de las aplicaciones para no entrar en interferencia con los programas son los siguientes : 
 
-* `vd01` - Iniciar la aplicación MODBTCU.
-* `vd02` - Iniciar la aplicación MODBTAL.
+* `vd01` - Iniciar la aplicación MODBTCU. (Disponible)
+* `vd02` - Iniciar la aplicación MODBTAL. (Disponible)
 * `vd03` - Iniciar la aplicación MODBTCU.
 * `vd04` - Iniciar la aplicación MODBTAL.
-* `pipeline` - Iniciar la aplicación ADUCT.
+* `pipeline` - Iniciar la aplicación ADUCT. (Disponible)
 * `fv01` - Iniciar la aplicación MODBTPV01.
 * `fv02` - Iniciar la aplicación MODBTPV02.
 
 ## Módulos y rutinas
 
-Los módulos y rutinas disponibles por el momento son :
 
-| Id   | Modulo        | Descripción                                                  | Precio   |  Versión  |
-| ---- | ------------- | ------------------------------------------------------------ | -------- | :-------: |
-| 01   | **MODBTCU**   | Aplicación para la plataforma AutoCAD desarrollado bajo su estándar de código actual con funcionalidad de dimensionar conductores eléctricos de cobre en baja tensión. | $20.USD  | 0.2.44.09 |
-| 02   | **MODBTAL**   | Aplicación para la plataforma AutoCAD desarrollado bajo su estándar de código actual con funcionalidad de dimensionar conductores eléctricos de aluminio en baja tensión. | $20.0USD | 0.2.44.09 |
-| 03   | **MODMTCU**   | Aplicación para la plataforma AutoCAD desarrollado bajo su estándar de código actual con funcionalidad de dimensionar conductores eléctricos de cobre en media tensión dentro de ciertos parámetros de carga. | $15.USD  | 0.2.43.05 |
-| 04   | **MODMTAL**   | Aplicación para la plataforma AutoCAD bajo su estándar de código actual con funcionalidad de dimensionar conductores eléctricos de cobre en media tensión dentro de ciertos parámetros de carga. | $15.USD  | 0.2.43.05 |
-| 05   | **ADUCT**     | Rutina para la plataforma AutoCAD desarrollado su estándar de código actual con funcionalidad de dimensionar tuberías eléctricas. | $5.USD   |  0.2.05   |
-| 06   | **MODBTPV01** | Aplicación para la plataforma AutoCAD desarrollado bajo su estándar de código actual con funcionalidad de dimensionar conductores eléctricos de cobre estándar en corriente directa para sistemas fotovoltaicos. | $10.USD  | 0.1.1.01  |
-| 07   | **MODBTPV02** | Aplicación para la plataforma AutoCAD bajo su estándar de código actual con funcionalidad de dimensionar conductores eléctricos de aluminio estándar en corriente directa para sistemas fotovoltaicos. | $10.USD  | 0.1.1.01  |
 
-©SELisp2022
+| Id   | Modulo        | Descripción                                                  | Versión   |
+| ---- | ------------- | ------------------------------------------------------------ | --------- |
+| 01   | **MODBTCU**   | Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de cobre utilizados en sistemas de baja tensión. | 0.2.44.10 |
+| 02   | **MODBTAL**   | Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de aluminio utilizados en sistemas de baja tensión. | 0.2.44.10 |
+| 03   | **MODMTCU**   | Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de cobre utilizados en sistemas de media tensión dentro de ciertos parámetros de carga. | 0.2.43.05 |
+| 04   | **MODMTAL**   | Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de aluminio utilizados en sistemas de media tensión dentro de ciertos parámetros de carga. | 0.2.43.05 |
+| 05   | **ADUCT**     | Rutina para la plataforma AutoCAD que permite dimensionar tuberías eléctricas. | 0.2.05    |
+| 06   | **MODBTPV01** | Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de cobre estándar en corriente directa para sistemas fotovoltaicos. | 0.1.1.01  |
+| 07   | **MODBTPV02** | Aplicación para la plataforma AutoCAD que ofrece la capacidad de dimensionar conductores eléctricos de aluminio estándar en corriente directa para sistemas fotovoltaicos. | 0.1.1.01  |
+
+
+
+
 
 
 
