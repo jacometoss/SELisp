@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Licencia - SELisp</title>
+        <title>Ejemplo 1 | Circuito alimentador - SELisp</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -80,14 +80,14 @@
                                 <a href="../buy/" class="nav-link">Comprar</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Licencia</a>
+                                <a href="../license/" class="nav-link">Licencia</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Dimensionamiento</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Dimensionamiento</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../ejemplo_1_circuito_alimentador/" class="dropdown-item">Ejemplo 1 | Circuito alimentador</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Ejemplo 1 | Circuito alimentador</a>
 </li>
                                 </ul>
                             </li>
@@ -100,12 +100,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../buy/" class="nav-link">
+                                <a rel="prev" href="../license/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../ejemplo_1_circuito_alimentador/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -127,12 +127,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#licencia" class="nav-link">Licencia</a>
+            <li class="nav-item" data-bs-level="2"><a href="#ejemplo-no1-circuito-alimentador" class="nav-link">Ejemplo No.1 Circuito Alimentador</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="2"><a href="#terminos-generales-de-uso" class="nav-link">Términos generales de uso</a>
+            <li class="nav-item" data-bs-level="2"><a href="#solucion-con-la-nom-001-sede" class="nav-link">Solución con la NOM-001-SEDE</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#solucion-con-selisp" class="nav-link">Solución con SELisp</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -142,20 +147,95 @@
                     <div class="col-md-9" role="main">
 
 <p><img alt="SELisp" src="https://raw.githubusercontent.com/jacometoss/SELisp/1d497dcb52c15b7545d4619467cbe138f87f7b02/docs/img/SELisp_banner.png" /></p>
-<h2 id="licencia">Licencia</h2>
-<p>Todas las aplicaciones son de código cerrado y cada módulo puede ser adquirido por separado con una vigencia total de uso de 365 días a partir de su activación, por lo tanto pueden generar infinidad de cálculos hasta finalizar tu licencia. </p>
-<p>Esta licencia no se encuentra limitada a un ordenador, puede ser utilizada en múltiples ordenadores que tengan instalada alguna versión AutoCAD o DRAFTSIGHT completa.</p>
-<p>Las actualizaciones de los módulos a lo largo de la vida útil de su licencia serán validos, siendo posible actualizar cada módulo.</p>
-<h2 id="terminos-generales-de-uso">Términos generales de uso</h2>
-<p>[ 1 ] El proveedor no asume ninguna responsabilidad por la exactitud y / o integridad del procesamiento del archivo generado. Es responsabilidad del usuario verificar el documento o archivo creado durante el procesamiento. El uso de documentos creados en el contexto del procesamiento de documentos (por ejemplo, un cálculo generado) es a discreción y riesgo del usuario. Lo anterior no afectará la responsabilidad del Proveedor por la ocultación fraudulenta de un defecto legal (defecto legal) y / o un defecto en los productos (defecto material).</p>
-<p>[ 2 ] El usuario tiene plena responsabilidad de como ingresa la información y el proveedor no asume ninguna responsabilidad</p>
-<p>[ 2 a) ] Los resultados obtenidos. Cada usuario tiene la responsabilidad de llenar debidamente cada casilla a criterio propio de acuerdo a las   características del circuito a desarrollar.</p>
-<p>[ 2 b) ] Carga del archivo. El usuario debe tener pleno juicio de como cargar el archivo dentro del software de terceros (AutoCAD, Draftsight).</p>
-<p>[ 2 c) ]  Ejecución. El usuario debe considerar los pasos adecuados para cargar los módulos o rutinas.</p>
-<p>[ 4 ] La vigencia de la licencia tiene como máximo 365 días.</p>
-<p>[ 5 ] Los módulos pueden ser utilizados en múltiples ordenadores. No queda sujeto el uso limitado de ordenadores.</p>
-<p>[ 6 ] Las actualizaciones de cada módulo o rutina quedan sujetas a disponibilidad.</p>
-<p>[ 7 ] El proveedor no asume ninguna responsabilidad de la mala operación de los módulos y rutinas. Se considera que el usuario que adquiere los módulos tiene pleno conocimiento de la actividad a realizar.</p></div>
+<h2 id="ejemplo-no1-circuito-alimentador">Ejemplo No.1 Circuito Alimentador</h2>
+<p>¿Qué calibre de conductor alimentador de material cobre se requiere para abastecer una carga combinada de 100 A continua y 100 A, no continua, ¿conforme a los requisitos de la NOM-001-SEDE-2012?</p>
+<ul>
+<li>a) 2/0 AWG</li>
+<li>b) 3/0 AWG</li>
+<li><strong>c) 4/0 AWG</strong> (Solución)</li>
+<li>d) 300 KCM</li>
+</ul>
+<h2 id="solucion-con-la-nom-001-sede">Solución con la NOM-001-SEDE</h2>
+<p>La ampacidad del conductor debe ser, como mínimo, del <strong>125 % de la carga continua</strong> más el <strong>100 % de la carga no continua</strong>, conforme a lo establecido en la <strong>NOM-001-SEDE</strong>, Subsección <strong>215-2 a) 1)</strong>. Esta disposición tiene como finalidad garantizar que el conductor pueda operar de manera segura sin sobrecalentarse durante condiciones normales de funcionamiento prolongado.</p>
+<p>En este caso particular, se determina que se requiere un conductor con una <strong>ampacidad mínima de 225 A</strong>. Según la <strong>tabla de capacidades de conducción de corriente (ampacidad)</strong>, un conductor calibre <strong>4/0 AWG</strong>, con aislamiento adecuado y a una temperatura de operación de <strong>75 °C</strong>, posee una <strong>capacidad nominal de 230 A</strong>, lo cual cumple con el requerimiento.</p>
+<p>Además, de acuerdo con el <strong>artículo 110-14(C)(1)(b)(2)</strong> de la misma norma, cuando se utilizan terminales clasificadas para 75 °C, la selección del conductor debe basarse en la ampacidad correspondiente a dicha temperatura, lo cual se ha cumplido en este caso.</p>
+<p>Por lo tanto, se concluye que el conductor <strong>calibre 4/0 AWG</strong> es adecuado para esta instalación, cumpliendo con los criterios normativos tanto en términos de capacidad de corriente como de condiciones térmicas de operación.</p>
+<h2 id="solucion-con-selisp">Solución con SELisp</h2>
+<p>Para resolver adecuadamente el problema utilizando <strong>SELisp</strong>, es necesario considerar las siguientes condiciones de diseño:</p>
+<ul>
+<li><strong>Tensión de línea:</strong> 220 V</li>
+<li><strong>Factor de potencia:</strong> 0.9</li>
+<li><strong>Distancia del circuito alimentador:</strong> 10 metros</li>
+<li><strong>Tipo de tubería eléctrica:</strong> Acero</li>
+<li><strong>Tipo de aislamiento de los conductores:</strong> THHW-LS</li>
+<li><strong>Temperatura de operación:</strong> 75 °C</li>
+<li><strong>Número de conductores por fase:</strong> 1</li>
+<li><strong>Factor del conductor:</strong> 1.00</li>
+<li><strong>Factor de protección:</strong> 1.00</li>
+<li><strong>Eficiencia del circuito:</strong> 100 % (1.00)</li>
+<li><strong>Pérdida de tensión permitida:</strong> 2 %</li>
+<li><strong>Temperatura ambiente:</strong>: 30 °C</li>
+<li><strong>Sistema de alimentación:</strong> Trifásico 3F-4H</li>
+</ul>
+<p>Teniendo en cuenta los puntos anteriores, la información se carga en el cuadro de diálogo como se muestra a continuación:</p>
+<p><img src="https://github.com/jacometoss/SELisp/blob/main/docs/img/e_1.png?raw=true" style="zoom:70%;" /></p>
+<p>Y finalmente, se obtiene la siguiente solución:</p>
+<pre><code class="language-tex">--------------------------------------------------------------------------------
+::::::::::::::::::::::::::::::::[REPORTE GENERAL]:::::::::::::::::::::::::::::::
+--------------------------------------------------------------------------------
+
+:::[DATOS DE CARGA]:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Circuito : Ejemplo 1
+    Alimentación : 3F-4H
+    Tipo : Alimentador
+    Potencia : 77162.8635 Watts
+    Potencia aparente : 85736.515 VA
+    Conductor de Cobre Aceptable
+    Fp : 0.9
+    Eficiencia : 100 %
+    Factor de Carga : 100 %
+    Factor de Ampacidad : 100 %
+    Factor de Proteccion : 100 %
+    Longitud : 10ml
+    Tuberia : Acero
+    T.Ambiente : 30C
+:::[ITM]::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Proteccion : 3Px225A
+    Capacidad : 10kA
+:::[CONDUCTOR]::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Calibre 4/0 AWG (107.2 mm²)
+    Cond. Fase : 1
+    Aislamiento : THHW-LS 75 C
+    Area Cond. : 201.0619 mm² 
+    R Cos A : 0.159 Ohms/Km
+    X Sin A : 0.0729 Ohms/Km
+    Z Cond : 0.2319 Ohms/Km
+    Ampacidad : 230 A
+:::[CALCULO POR AMPACIDAD]::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    In : 225 A
+    In/Nc : 225 A
+    F.A. : 1
+    F.T. : 1
+    Ampacidad : 230 A
+:::[CALCULO POR CAIDA DE TENSION]:::::::::::::::::::::::::::::::::::::::::::::::
+    Z : 0.0023 Ohms
+    Vd : 0.9039 V
+    Vs : 220 V
+    Vd : 0.4109 %
+:::[SPT]::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    T - 2 AWG
+:::[SECCION DE CONDUCTORES]:::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Area total de : 4C +1T
+    4C : 804.2477 mm²
+    1T : 83.3229 mm²
+    Total : 887.5706 mm²
+:::[PESO DE CONDUCTORES]::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Fase : 45.04 Kg
+    Tierra : 3.72 Kg
+:::[LONGITUD DE CONDUCTORES]::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Fase : 40 m
+    Tierra : 10 m
+</code></pre></div>
             </div>
         </div>
 
