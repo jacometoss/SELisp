@@ -21,7 +21,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/scilab.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/lisp.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
-        <script>hljs.highlightAll();</script> 
+        <script>hljs.highlightAll();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBDJ62SK8W"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', "G-GBDJ62SK8W");
+        </script> 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBDJ62SK8W"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -65,7 +73,7 @@
 </li>
                                     
 <li>
-    <a href="../suit/" class="dropdown-item">SUITE</a>
+    <a href="../suite/" class="dropdown-item">SUITE</a>
 </li>
                                     
 <li>
@@ -83,13 +91,20 @@
                                 <a href="../license/" class="nav-link">Licencia</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Dimensionamiento</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutoriales</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
     <a href="./" class="dropdown-item active" aria-current="page">Ejemplo 1 | Circuito alimentador</a>
 </li>
+                                    
+<li>
+    <a href="../ejemplo_2_circuito_derivado/" class="dropdown-item">Ejemplo 2 | Circuito derivado</a>
+</li>
                                 </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../list_of_news.md" class="nav-link">Noticias</a>
                             </li>
                         </ul>
 
@@ -105,7 +120,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../ejemplo_2_circuito_derivado/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -158,7 +173,7 @@
 <h2 id="solucion-con-la-nom-001-sede">Solución con la NOM-001-SEDE</h2>
 <p>La ampacidad del conductor debe ser, como mínimo, del <strong>125 % de la carga continua</strong> más el <strong>100 % de la carga no continua</strong>, conforme a lo establecido en la <strong>NOM-001-SEDE</strong>, Subsección <strong>215-2 a) 1)</strong>. Esta disposición tiene como finalidad garantizar que el conductor pueda operar de manera segura sin sobrecalentarse durante condiciones normales de funcionamiento prolongado.</p>
 <p>En este caso particular, se determina que se requiere un conductor con una <strong>ampacidad mínima de 225 A</strong>. Según la <strong>tabla de capacidades de conducción de corriente (ampacidad)</strong>, un conductor calibre <strong>4/0 AWG</strong>, con aislamiento adecuado y a una temperatura de operación de <strong>75 °C</strong>, posee una <strong>capacidad nominal de 230 A</strong>, lo cual cumple con el requerimiento.</p>
-<p>Además, de acuerdo con el <strong>artículo 110-14(C)(1)(b)(2)</strong> de la misma norma, cuando se utilizan terminales clasificadas para 75 °C, la selección del conductor debe basarse en la ampacidad correspondiente a dicha temperatura, lo cual se ha cumplido en este caso.</p>
+<p>Además, de acuerdo con la <strong>subsección 110-14(C)(1)(b)(2)</strong> de la misma norma, cuando se utilizan terminales clasificadas para 75 °C, la selección del conductor debe basarse en la ampacidad correspondiente a dicha temperatura, lo cual se ha cumplido en este caso.</p>
 <p>Por lo tanto, se concluye que el conductor <strong>calibre 4/0 AWG</strong> es adecuado para esta instalación, cumpliendo con los criterios normativos tanto en términos de capacidad de corriente como de condiciones térmicas de operación.</p>
 <h2 id="solucion-con-selisp">Solución con SELisp</h2>
 <p>Para resolver adecuadamente el problema utilizando <strong>SELisp</strong>, es necesario considerar las siguientes condiciones de diseño:</p>
@@ -179,7 +194,7 @@
 </ul>
 <p>Teniendo en cuenta los puntos anteriores, la información se carga en el cuadro de diálogo como se muestra a continuación:</p>
 <p><img src="https://github.com/jacometoss/SELisp/blob/main/docs/img/e_1.png?raw=true" style="zoom:70%;" /></p>
-<p>Y finalmente, se obtiene la siguiente solución:</p>
+<p>Se obtiene la siguiente solución, la cual puede guardarse en un archivo de texto o visualizarse como un resumen desde la línea de comandos.</p>
 <pre><code class="language-tex">--------------------------------------------------------------------------------
 ::::::::::::::::::::::::::::::::[REPORTE GENERAL]:::::::::::::::::::::::::::::::
 --------------------------------------------------------------------------------
@@ -235,13 +250,14 @@
 :::[LONGITUD DE CONDUCTORES]::::::::::::::::::::::::::::::::::::::::::::::::::::
     Fase : 40 m
     Tierra : 10 m
-</code></pre></div>
+</code></pre>
+<p>Si estás interesado en la <a href="https://selisp.com/suite/">SUITE SELisp</a>, puedes adquirirla por 6 o 12 meses sin restricciones de dimensionamiento haciendo <a href="https://selisp.com/suite/">clic aquí</a>. Gracias por llegar hasta el final de la lectura. Si te gustó el contenido, no olvides compartirlo.</p></div>
             </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>© 2025 SELisp.com. Todos los derechos reservados.</p>
+                <p>© 2026 SELisp.com. Todos los derechos reservados.</p>
             
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>

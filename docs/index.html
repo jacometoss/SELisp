@@ -21,7 +21,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/scilab.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/lisp.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
-        <script>hljs.highlightAll();</script> 
+        <script>hljs.highlightAll();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBDJ62SK8W"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', "G-GBDJ62SK8W");
+        </script> 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBDJ62SK8W"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -65,7 +73,7 @@
 </li>
                                     
 <li>
-    <a href="suit/" class="dropdown-item">SUITE</a>
+    <a href="suite/" class="dropdown-item">SUITE</a>
 </li>
                                     
 <li>
@@ -83,13 +91,20 @@
                                 <a href="license/" class="nav-link">Licencia</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Dimensionamiento</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Tutoriales</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
     <a href="ejemplo_1_circuito_alimentador/" class="dropdown-item">Ejemplo 1 | Circuito alimentador</a>
 </li>
+                                    
+<li>
+    <a href="ejemplo_2_circuito_derivado/" class="dropdown-item">Ejemplo 2 | Circuito derivado</a>
+</li>
                                 </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="list_of_news.md" class="nav-link">Noticias</a>
                             </li>
                         </ul>
 
@@ -132,6 +147,11 @@
               </ul>
             </li>
             
+            <li class="nav-item" data-bs-level="2"><a href="#suite-selisp" class="nav-link">SUITE SELisp</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
             <li class="nav-item" data-bs-level="2"><a href="#comandos" class="nav-link">Comandos</a>
               <ul class="nav flex-column">
               </ul>
@@ -148,12 +168,12 @@
 
 <p><img alt="SELisp" src="https://raw.githubusercontent.com/jacometoss/SELisp/1d497dcb52c15b7545d4619467cbe138f87f7b02/docs/img/SELisp_banner.png" /></p>
 <h2 id="selisp">SELisp</h2>
-<p>Son aplicaciones desglosadas en módulos para la plataforma AutoCAD / Draftsight bajo su estándar de código actual para obtener el dimensionamiento de conductores eléctricos y el desglose de una memoria descriptiva.</p>
-<p>Los módulos únicamente pueden ser cargados en versiones de Autodesk completas y en versiones de Draftsight o BricsCAD, actualmente existe una versión de AutoCAD LT de bajo costo pero esta no incluye el soporte para poder correr estas aplicaciones.</p>
-<p>SELisp como su nombre lo indica son módulos para los sistemas eléctricos de baja tensión abreviado como SE y en particular la palabra LISP viene de el procesamiento de listas.</p>
-<p>Desarrollado originalmente en 1958 por John McCarthy y sus colaboradores en el Instituto Tecnológico de Massachusetts, Lisp es el segundo lenguaje de programación de alto nivel de mayor antigüedad; apareció un año después de FORTRAN y uno antes que COBOL.</p>
-<p>Lisp fue creado originalmente como una notación matemática práctica para los programas de computadora, basada en el cálculo lambda de Alonzo Church. Se convirtió rápidamente en el lenguaje de programación favorito en la investigación de la inteligencia artificial (AI). Como lenguajes de programación precursor, Lisp fue pionero en muchas ideas en ciencias de la computación, incluyendo las estructuras de datos de árbol, el manejo de almacenamiento automático, tipos dinámicos, y el compilador auto contenido.</p>
-<p>El acrónimo LISP significa &ldquo;LISt Processor&rdquo; (&lsquo;Procesamiento de listas&rsquo;).</p>
+<p>Estas aplicaciones están estructuradas en <strong>módulos especializados</strong> desarrollados para la plataforma <strong>AutoCAD / DraftSight</strong>, siguiendo el estándar de codificación vigente, con el objetivo de realizar el <strong>dimensionamiento de conductores eléctricos</strong> y generar el <strong>desglose de la memoria descriptiva</strong> correspondiente a instalaciones eléctricas.</p>
+<p>Tradicionalmente, estos módulos solo podían cargarse y ejecutarse en <strong>versiones completas de Autodesk AutoCAD</strong>, así como en <strong>DraftSight</strong> o <strong>BricsCAD</strong>. No obstante, actualmente <strong>AutoCAD LT 2026 incorpora compatibilidad</strong> que permite ejecutar estas aplicaciones, ampliando así las capacidades funcionales de esta versión.</p>
+<p><strong>SELisp</strong>, como su nombre lo indica, corresponde a un conjunto de módulos orientados a <strong>Sistemas Eléctricos de baja tensión</strong> (SE). El término <strong>LISP</strong> hace referencia al lenguaje de programación utilizado, cuyo nombre proviene del concepto de <em>procesamiento de listas</em>.</p>
+<h2 id="suite-selisp">SUITE SELisp</h2>
+<p><strong>SUITE SELisp</strong> es un conjunto de aplicaciones para AutoCAD, diseñado para el dimensionamiento de conductores eléctricos de cobre y aluminio en sistemas de baja tensión de corriente alterna. Integra módulos especializados que permiten realizar cálculos precisos y eficientes directamente sobre planos eléctricos. Es ideal para ingenieros, arquitectos, diseñadores y proyectistas eléctricos. Disponible con licencia digital válida por 6 meses o 1 año, según tus necesidades.</p>
+<p>Más información en: <a href="https://selisp.com/suite/"><strong>https://selisp.com/suite</strong></a></p>
 <h2 id="comandos">Comandos</h2>
 <p>Los comandos disponibles de las aplicaciones para no entrar en interferencia con los programas son los siguientes : </p>
 <ul>
@@ -225,8 +245,7 @@
 
         <footer class="col-md-12">
             <hr>
-                <p>© 2025 SELisp.com. Todos los derechos reservados.</p>
-                <p>Desarrollado por <a href="https://www.linkedin.com/in/jacometoss/?_l=es_ES"> Marco Polo Jácome Toss </a>.</p>
+                <p>© 2026 SELisp.com. Todos los derechos reservados.</p>
             
         </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
@@ -304,5 +323,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-04-24 16:43:07.536382+00:00
+Build Date UTC : 2026-01-05 09:14:07.225725+00:00
 -->
